@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiin-Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://files.catbox.moe/ew33a6.jpg">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1>Shiinji Payment</h1>
+            <div class="about-section">
+                <h2>About</h2>
+                <p>Welcome to our payment gateway. Easily send payments through various methods including e-wallets, bank transfers, and donation platforms.</p>
+            </div>
+            <button id="startButton" class="start-button" style="display: none;">Start A Web</button>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent" style="display: none;">
+        <header>
+            <h1>Shiinji Payment</h1>
+        </header>
+
+        <main>
+            <div class="payment-section">
+                <button class="main-button" id="eWalletBtn">E-Wallet <i class="fas fa-wallet"></i></button>
+                <div class="sub-buttons" id="eWalletOptions">
+                    <button class="sub-button" id="danaBtn">Dana <i class="fas fa-copy"></i></button>
+					<button class="sub-button" id="gopayBtn">Gopay <i class="fas fa-copy"></i></button>
+                    <button class="sub-button" id="ovoBtn">Ovo <i class="fas fa-copy"></i></button>
+                    <button class="sub-button" id="qrisBtn">QRIS <i class="fas fa-qrcode"></i></button>
+                </div>
+
+                <button class="main-button" id="bankBtn">Bank - Belum Tersedia <i class="fas fa-university"></i></button>
+                <div class="sub-buttons" id="bankOptions">
+                    <button class="sub-button" id="briBtn">BRI <i class="fas fa-copy"></i></button>
+                    <button class="sub-button" id="bniBtn">BNI <i class="fas fa-copy"></i></button>
+                </div>
+
+                <button class="main-button" id="donateBtn">Donate <i class="fas fa-heart"></i></button>
+                <div class="sub-buttons" id="donateOptions">
+                    <button class="sub-button" id="trakteerBtn">Trakteer <i class="fas fa-external-link-alt"></i></button>
+                    <button class="sub-button" id="saweriaBtn">Saweria <i class="fas fa-external-link-alt"></i></button>
+                    <button class="sub-button" id="buyMeCoffeeBtn">Buy Me A Coffee <i class="fas fa-external-link-alt"></i></button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact-section">
+                <h3>Hubungi Saya</h3>
+                <div class="contact-buttons">
+                    <button class="contact-button" id="whatsappBtn"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+                    <button class="contact-button" id="emailBtn"><i class="fas fa-envelope"></i> Email</button>
+                </div>
+            </div>
+            <div class="credit">
+                <p>© 2025 Shiin Payment Gateway. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
